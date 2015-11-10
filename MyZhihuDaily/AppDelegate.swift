@@ -10,16 +10,26 @@ import UIKit
 import CoreData
 import Alamofire
 import SwiftyJSON
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var topStory :[TopStoryModel] = []
+    var contentStory :[ContentStoryModel] = []
+    var pastContentStory : [PastContentStoryItem] = []
+    var offsetYValue :[(CGFloat,String)] = []
+    var themes : [ThemeModel] = []
+    var themeContent : ThemeContentModel?
+    var firstDisplay = true
+
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         //获取文章内容
         getDayData()
+
         return true
     }
 
@@ -130,7 +140,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             //注入topStory
             for i in 0..<topStoryData.count {
-//            self.
+//            self.topStory.append(TopStoryModel(image)
+                
             }
             
 

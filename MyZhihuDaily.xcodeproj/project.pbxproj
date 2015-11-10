@@ -15,6 +15,7 @@
 		275D0E521BF18CE00065514E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275D0E501BF18CE00065514E /* LaunchScreen.storyboard */; };
 		275D0E5D1BF18CE00065514E /* MyZhihuDailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D0E5C1BF18CE00065514E /* MyZhihuDailyTests.swift */; };
 		275D0E681BF18CE00065514E /* MyZhihuDailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D0E671BF18CE00065514E /* MyZhihuDailyUITests.swift */; };
+		275D0E781BF1F7820065514E /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D0E771BF1F7820065514E /* StoryModel.swift */; };
 		EC7A424890ECEAFCC69EEAC5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27422C399B18B7D0697EF7E8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		275D0E631BF18CE00065514E /* MyZhihuDailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyZhihuDailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		275D0E671BF18CE00065514E /* MyZhihuDailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyZhihuDailyUITests.swift; sourceTree = "<group>"; };
 		275D0E691BF18CE00065514E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275D0E771BF1F7820065514E /* StoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		E8FB66302B8F3360DED77C96 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 			children = (
 				275D0E441BF18CE00065514E /* AppDelegate.swift */,
 				275D0E461BF18CE00065514E /* ViewController.swift */,
+				275D0E771BF1F7820065514E /* StoryModel.swift */,
 				275D0E481BF18CE00065514E /* Main.storyboard */,
 				275D0E4E1BF18CE00065514E /* Assets.xcassets */,
 				275D0E501BF18CE00065514E /* LaunchScreen.storyboard */,
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				275D0E471BF18CE00065514E /* ViewController.swift in Sources */,
+				275D0E781BF1F7820065514E /* StoryModel.swift in Sources */,
 				275D0E451BF18CE00065514E /* AppDelegate.swift in Sources */,
 				275D0E4D1BF18CE00065514E /* MyZhihuDaily.xcdatamodeld in Sources */,
 			);
