@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+        //获取文章内容
+        getDayData()
         return true
     }
 
@@ -106,6 +107,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
                 abort()
             }
+        }
+    }
+    
+    //MARK: - 数据相关
+    func getDayData()
+    {
+        Alamofire.request(.GET, "http://news-at.zhihu.com/api/4/news/latest").responseJSON { (response) -> Void in
+//            print(response.request)
+//            print(response.data)
+//            print(response.response)
+//            print(response.result)
+            guard let value = response.result.value else {
+                 print("数据获取失败")
+                 return
+            }
+            let data = JSON(value)
+            print(data)
+            //获取本日文章列表数据
+            let topStoryData = data["top_stories"]
+            let contentStoryData = data["stories"]
+            
+            //注入topStory
+            for i in 0..<topStoryData.count {
+//            self.
+            }
+            
+
+            
+            
+            
         }
     }
 
