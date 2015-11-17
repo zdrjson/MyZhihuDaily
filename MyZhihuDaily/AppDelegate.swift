@@ -29,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //获取文章内容
         getDayData()
-
         return true
     }
 
@@ -148,13 +147,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             {
                self.contentStory.append(ContentStoryModel(images: [contentStoryData[i]["images"][0].string!], id: String(contentStoryData[i]["id"]), title: contentStoryData[i]["title"].string!))
             }
-
+            //设置offsetYValue
+            self.offsetYValue.append((120 + CGFloat(contentStoryData.count) * 93, "今日热闻"))
+            //发出完成通知
+            NSNotificationCenter.defaultCenter().postNotificationName("todayDataGet", object: nil)
             
-            
-            
-            
+            //获取过去三天的文章内容
+             self.getPastData()//闭包调用要self???
         }
+       
+    }
+    
+    
+    func getPastData() {
+        
     }
 
 }
+
 
