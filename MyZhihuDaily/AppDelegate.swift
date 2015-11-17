@@ -139,12 +139,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let contentStoryData = data["stories"]
             
             //注入topStory
-            for i in 0..<topStoryData.count {
-//            self.topStory.append(TopStoryModel(image)
-                
+            for i in 0..<topStoryData.count
+            {
+                self.topStory.append(TopStoryModel(image:topStoryData[i]["image"].string!,id : String (topStoryData[i]["id"]),title: topStoryData[i]["title"].string!))
             }
-            
+            //注入topStory
+            for i in 0..<contentStoryData.count
+            {
+               self.contentStory.append(ContentStoryModel(images: [contentStoryData[i]["images"][0].string!], id: String(contentStoryData[i]["id"]), title: contentStoryData[i]["title"].string!))
+            }
 
+            
             
             
             
