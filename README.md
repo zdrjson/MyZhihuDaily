@@ -1,2 +1,2 @@
 # MyZhihuDaily
-swfitProject
+SwiftProject
